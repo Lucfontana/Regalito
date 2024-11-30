@@ -1,7 +1,32 @@
 body {
-    background-color: aqua;
+    background: rgb(240,130,128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(308deg, rgba(240,130,128,1) 75%, rgba(244,183,142,1) 99%);
+
 }
 
 .prueba{
     display: block;
+}
+
+.elementos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4978E;
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    box-shadow: 7px 7px 10px 5px #eb9d96;
+}
+.form {
+    display: flex;
+    width: 100%;
+}
+
+button {
+    border: none;
 }
