@@ -18,33 +18,28 @@ let texto = "Texto cambiante";
 document.getElementById("changingText").innerHTML = texto;
 
 let botonSi = document.getElementById("botonSi");
+const textos = [
+    "El texto cambió por primera vez",
+    "El texto cambió por segunda vez",
+    "El texto cambió por tercera vez",
+    "El texto cambió por cuarta vez",
+    "El texto cambió por quinta vez"
+];
 
 botonSi.addEventListener("click", (event) => {
     ejeX = ejeX + 1;
     ejeY = ejeY + 1;
 
     apretarBtnSi();
-    //El switch debe ir adentro del eventListener para que ejecute 
+    //El if debe ir adentro del eventListener para que ejecute 
     //Cada vez que el boton es presionado
-    switch(vecesApretado){
-        case 1: 
-            texto = "El texto cambió por primera vez";
-            break;
-        case 2: 
-            texto = "El texto cambió por segunda vez";
-            break;
-        case 3:
-            texto = "El texto cambió por tercera vez";
-            break;
-        case 4:
-            texto = "El texto cambió por cuarta vez";
-            break;
-        case 5:
-            texto = "El texto cambió por quinta vez";
-            break;
-        default:
-            window.location.href="index.html";
-            return;
+    if(vecesApretado <= textos.length)
+    {
+        texto = textos[vecesApretado-1];
+    }
+    else
+    {
+        window.location.href="index.html";
     }
     console.log(vecesApretado);
     document.getElementById("changingText").innerHTML = texto;
