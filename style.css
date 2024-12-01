@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(308deg, rgba(240,130,128,1) 75%, rgba(244,183,142,1) 99%);
 
 }
@@ -13,6 +13,9 @@ body {
 }
 
 .elementos {
+    max-width: 90%; /* Para que ocupe el 90% del ancho de la pantalla */
+    width: 500px;   /* Ancho máximo en dispositivos grandes */
+    box-sizing: border-box; /* Asegura que el padding no exceda el ancho total */
     display: flex;
     justify-content: center;
     align-items: center;
