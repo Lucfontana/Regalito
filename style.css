@@ -45,3 +45,7 @@ button, input{
 #chestercito {
     transform: scale(var(ejeX), var(ejeY));
 }
+
+h3 {
+    color: rgb(223, 65, 65);
+}

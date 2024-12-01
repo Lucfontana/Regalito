@@ -39,7 +39,7 @@ botonSi.addEventListener("click", (event) => {
     }
     else
     {
-        window.location.href="index.html";
+        window.location.href="mensaje.html";
     }
     console.log(vecesApretado);
     document.getElementById("changingText").innerHTML = texto;
