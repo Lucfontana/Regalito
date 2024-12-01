@@ -20,13 +20,28 @@ body {
     padding: 20px;
     border-radius: 20px;
     flex-direction: column;
-    box-shadow: 7px 7px 10px 5px #eb9d96;
+    box-shadow: 7px 7px 10px 5px #eb9d96;  /*Se especifica sombra eje x, sombra eye y, */
 }
 .form {
     display: flex;
     width: 100%;
 }
 
-button {
+button, input{
     border: none;
+    border-radius: 9px;
+    padding: 5px 10px 5px 10px
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.no {
+    position: initial;
+}
+
+#chestercito {
+    transform: scale(var(ejeX), var(ejeY));
 }
