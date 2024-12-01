@@ -14,16 +14,16 @@ function botonNo(){
 let ejeX = 0;
 let ejeY = 0;
 let vecesApretado = 0;
-let texto = "Texto cambiante";
+let texto = "¿Me amas?";
 document.getElementById("changingText").innerHTML = texto;
 
 let botonSi = document.getElementById("botonSi");
 const textos = [
-    "El texto cambió por primera vez",
-    "El texto cambió por segunda vez",
-    "El texto cambió por tercera vez",
-    "El texto cambió por cuarta vez",
-    "El texto cambió por quinta vez"
+    "¿Mucho mucho mucho?",
+    "¿Me amas aunque juegue kit en atraco para el 0-11?",
+    "¿Estás segura?",
+    "¿Segurísima?",
+    "¿Seguriminisimisima?"
 ];
 
 botonSi.addEventListener("click", (event) => {

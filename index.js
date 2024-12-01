@@ -9,7 +9,7 @@ function revision(){
         
     }
     else {
-        document.getElementById("mostrarNombre").innerHTML = "sos un bragueta";
+        document.getElementById("mostrarNombre").innerHTML = "No sos mi amorcito get out";
         cambiarContenido();
         esconderContenido();
         return false;
